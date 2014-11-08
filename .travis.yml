@@ -6,4 +6,5 @@ before_install:
   - mkdir ${HOME}/mysql
   - cd ${HOME}/mysql
   - apt-get source mysql-server
+  - ls
 script: echo 'foo'
