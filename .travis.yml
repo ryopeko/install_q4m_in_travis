@@ -5,5 +5,5 @@ before_install:
   - sudo apt-get install mysql-server libmysqlclient-dev
   - mkdir ${HOME}/mysql
   - cd ${HOME}/mysql
-  - apt-get source mysql-server-5.1
+  - apt-get source mysql-server
 script: echo 'foo'
