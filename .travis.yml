@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+  - 2.1
+before_install:
+  - sudo aptitude install mysql-server-5.1 mysql-common/lenny-backports
+  - sudo aptitude install libssl-dev g++-4.1 libmysqlclient-dev
+  - mkdir ${HOME}/mysql
+  - cd ${HOME}/mysql
+  - apt-get source mysql-server-5.1
+script: echo 'foo'
