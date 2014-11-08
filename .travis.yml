@@ -2,8 +2,7 @@ language: ruby
 rvm:
   - 2.1
 before_install:
-  - sudo apt-get install mysql-server-5.1 mysql-common/lenny-backports
-  - sudo apt-get install libssl-dev g++-4.1 libmysqlclient-dev
+  - sudo apt-get install mysql-server libmysqlclient-dev
   - mkdir ${HOME}/mysql
   - cd ${HOME}/mysql
   - apt-get source mysql-server-5.1
