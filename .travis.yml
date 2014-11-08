@@ -7,4 +7,12 @@ before_install:
   - cd ${HOME}/mysql
   - apt-get source mysql-server
   - ls
+  - sudo apt-get install cmake
+  - cd mysql-5.5-5.5.40
+  - cmake .
+  - make
+  - cd extra
+  - ./comp_err -H ../include/mysqld_error.h
+  - cd
+  - wget http://q4m.kazuhooku.com/dist/q4m-0.9.10.tar.gz
 script: echo 'foo'
